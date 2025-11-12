@@ -4,6 +4,7 @@
         int chose,c;
         while (true)
         {
+            system("cls");
             printf("** Welcome to ROHYAS BANK**\n");
             printf("Please chose from the below:\n1. Administration\n2. Client\nChose: ");
             if(scanf("%d",&chose) != 1){
@@ -14,7 +15,7 @@
             switch (chose)
             {
             case 1:
-                adminLogin();
+                admin();
                 break;
             case 2:
                 

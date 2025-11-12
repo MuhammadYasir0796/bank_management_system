@@ -15,3 +15,7 @@ To ensure that all C files compile and run correctly in **VS Code** using Code R
 ### Original setting
 ```json
 "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+
+### To setting
+```json
+"c": "gcc main.c administration.c client.c -o main.exe && ./main.exe",

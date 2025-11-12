@@ -1,0 +1,1 @@
+int checkUniqency(char id[])
