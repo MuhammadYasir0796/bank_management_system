@@ -14,5 +14,8 @@ int adminLogin();
 int createClient();
 int checkUniqency(char *id);
 char* generateCode();
+int flagChange();
+int updateAccount();
+void viewAccounts();
 
 #endif

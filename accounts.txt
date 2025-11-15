@@ -1,0 +1,3 @@
+4478,yasir,yasir786,pakistan,15000,10000,10000,20000,red
+7183,Arshad,arshad21,pakistan,10000,10000,10000,20000,green
+4675,Rohail,rohail21,pakistan,5000,5000,5000,10000,green
