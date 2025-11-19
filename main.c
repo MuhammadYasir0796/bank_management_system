@@ -18,7 +18,7 @@
                 admin();
                 break;
             case 2:
-                
+                client();
                 break;
 
             default:

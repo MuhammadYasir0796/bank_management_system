@@ -89,7 +89,7 @@ int createClient(){
     country[strcspn(country, "\r\n")] = '\0';
     printf("Limit of withdrawn per day: ");
     scanf("%d",&lowpd);
-    printf("Limit of deposit per day: ");
+    printf("Account Limit: ");
     scanf("%d",&lodpd);
     printf("Limit of transfer: ");
     scanf("%d",&lot);
@@ -238,7 +238,7 @@ int updateAccount(){
                 if(isDoneUpdating) break;
                 printf("\n\nUpdating information of client %s\n",code);
                 printf("What information you want to change of client\n");
-                printf("1. Name\n2. Limit of withdrawn per day\n3. Limit of deposit per day\n4. Limit of transfer\n5. Done with updating\nChose: ");
+                printf("1. Name\n2. Limit of withdrawn per day\n3. Account Limit\n4. Limit of transfer\n5. Done with updating\nChose: ");
                 scanf("%d",&chose);
                 switch(chose){
                     case 1:
@@ -260,8 +260,8 @@ int updateAccount(){
                         }
                         break;
                     case 3:
-                        printf("The current 'Limit of Deposit per day' of client %s is %d\n",Code,lodpd);
-                        printf("Enter the new 'Limit of Deposit per day' for client %s: ",Code);
+                        printf("The current 'Account Limit' of client %s is %d\n",Code,lodpd);
+                        printf("Enter the new 'Account Limit' for client %s: ",Code);
                         while((c=getchar()), c != '\n' && c != EOF);
                         if(scanf("%d",&lodpd) != 1){
                             printf("Invalid input");
@@ -338,7 +338,7 @@ void viewAccounts(){
             sscanf(ch,"%4[^,],%49[^,],%9[^,],%19[^,],%d,%d,%d,%d,%9[^,\n]",Code,name,pass,country,&lowpd,&lodpd,&lot,&balance,flag);
             Code[strcspn(Code, "\n")] = '\0';
             if(strcmp(code,Code)==0){
-                printf("Code\tName\tLimit Of withdrawn\tLimit of deposit\tLimit of transfer\tBalance\t\tFlag\n");
+                printf("Code\tName\tLimit Of withdrawn\tAccount Limit\tLimit of transfer\tBalance\t\tFlag\n");
                 found=1;
                 printf("%s\t%s\t\t%d\t\t%d\t\t\t%d\t\t\t%d\t\t%s\n",Code,name,lowpd,lodpd,lot,balance,flag);
                 while((c=getchar()), c != '\n' && c != EOF);
@@ -350,7 +350,7 @@ void viewAccounts(){
         }
     
     }else{
-        printf("Code\tName\tLimit Of withdrawn\tLimit of deposit\tLimit of transfer\tBalance\t\tFlag\n");
+        printf("Code\tName\tLimit Of withdrawn\tAccount Limit\tLimit of transfer\tBalance\t\tFlag\n");
         while(fgets(ch,sizeof(ch),pFile)){
         sscanf(ch,"%4[^,],%49[^,],%9[^,],%19[^,],%d,%d,%d,%d,%9[^,\n]",Code,name,pass,country,&lowpd,&lodpd,&lot,&balance,flag);
         Code[strcspn(Code, "\n")] = '\0';

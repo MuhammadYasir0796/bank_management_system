@@ -18,4 +18,19 @@ int flagChange();
 int updateAccount();
 void viewAccounts();
 
+
+//Client
+int client();
+int verifying(char usercode[10], char userpassword[10]);
+// void viewdetails();
+void checkstatus();
+int clientMenu();
+int withdrawn();
+int withdrawnLimitCross(int withdrawnAmount);
+int checkLastTransactions();
+void flagToRed();
+void updateUser();
+int deposit();
+int transfer()
+
 #endif

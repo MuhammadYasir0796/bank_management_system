@@ -1,1 +1,1 @@
-void displayAccount(char Code[],char name[],int lowpd,int lodpd,int lot,int balance,char flag[])
+updateUser

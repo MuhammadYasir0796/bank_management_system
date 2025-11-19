@@ -1,3 +1,5 @@
-4478,yasir,yasir786,pakistan,15000,10000,10000,20000,red
-7183,Arshad,arshad21,pakistan,10000,10000,10000,20000,green
-4675,Rohail,rohail21,pakistan,5000,5000,5000,10000,green
+4478,yasir,yasir786,pakistan,15000,100000,10000,100000,red
+7183,Arshad,arshad21,pakistan,10000,100000,10000,19700,red
+4675,Rohail,rohail21,pakistan,5000,500000,5000,10000,green
+1908,Ahmed,ahmed786,pakistan,20000,200000,20000,50000,green
+8496,hassan,hassan21,pakistan,5000,600000,10000,50000,green
