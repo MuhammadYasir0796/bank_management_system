@@ -31,6 +31,10 @@ int checkLastTransactions();
 void flagToRed();
 void updateUser();
 int deposit();
-int transfer()
-
+int transfer();
+int transferCheckAccountExits(char code[],char *n,char *p,char *c,int *wl,int *dl,int *tl, int *b,char *f);
+void checkuserbalance();
+void viewuseraccountinfo();
+int freezeaccount();
+void viewtransactionhistory();
 #endif
